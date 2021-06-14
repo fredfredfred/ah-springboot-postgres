@@ -31,7 +31,7 @@ source: [Wikipedia: Relational_database][https://en.wikipedia.org/wiki/Relationa
 
 ACID is a feature of database transactions intended to guarantee data validity.
 
-- Atomicity: Transactin is a single unit
+- Atomicity: Transaction is a single unit
 - Consistency: Data wont get corrupt by your transaction
 - Isolation: Concurrent transactions do not influence each other
   - here it gets more complicated as conflicts are possible and strategies exist (concurrency control mechanisms) to
