@@ -3,28 +3,46 @@ marp: true
 title: Java Spring Boot & SQL
 description: Short introduction for novice developers to use SQL in Java
 
-theme: uncover
-class: invert
+theme: gaia
+class: 
+  - invert
 paginate: true
 _paginate: false
-footer: 'Slides by [Ansgar](http://www.ansgar-hugo.de)'
+footer: 'Slides by [Ansgar Hugo](http://www.ansgar-hugo.de)'
 ---
-# Relational databases
-- Relational database management system (RDBMS).
+# Relational Databases
+- RDBMS: Relational database management system
+- SQL: Structured Query Language
 
 ---
-# Relations / Tables
-| SQL term           | Relational database term | Example  |
-| :-------------     | :-------------           | :-----       |
-| Row                | Tuple or record          | A data set representing a single item |
-| Column             | Attribute or field       | A labeled element of a tuple, e.g. "Zipcode" or "Date of birth" |
-| Table              | Relation or Base relvar  | A set of tuples sharing the same attributes; a set of columns and rows |
-| View or result set | Derived relvar           | Any set of tuples; a data report from the RDBMS in response to a query |
+# Popular Vendors
 
-source: [Wikipedia: Relational_database][https://en.wikipedia.org/wiki/Relational_database]
+https://db-engines.com/en/ranking
+![width:600px](img/top_vendors.png "Logo Title Text 1")
 
 ---
-## Relations
+# Relations / Tables / Entities
+
+| SQL term           | Relational term          | Example                                             |
+| :-------------     | :-------------           | :-----                                              |
+| Table              | Relation or Base relvar  | Game                                                |
+| Row                | Tuple or record          | Game "Spanien – Schweden"                           |
+| Column             | Attribute or field       | Date, stage, team_left, team_right, goals_left, ... |
+| View or result set | Derived relvar           | All games in group stage                            |
+
+---
+## Entity Relationsship Diagram
+https://www.fussball-wm.pro/wp-content/uploads/sites/1/2021/06/em-spielplan-2021.pdf
+https://www.uefa.com/uefaeuro-2020/fixtures-results/#/md/33673
+
+---
+## Relationsship Concepts and Terms
+- Primary key
+- Foreign key
+- Many to one
+- Many to many
+- One to many
+
 ---
 
 ## ACID
@@ -37,13 +55,6 @@ ACID is a feature of database transactions intended to guarantee data validity.
   - here it gets more complicated as conflicts are possible and strategies exist (concurrency control mechanisms) to
     mitigate them
 - Durability: Survive power outage
-
----
-
-# Popular vendors
-
-https://db-engines.com/en/ranking
-![width:600px](img/top_vendors.png "Logo Title Text 1")
 
 ---
 # SQL
@@ -59,7 +70,7 @@ Structured Query Language
 ---
 
 
-# Integration testing
+# Integration Testing
 
 - Testcontainers
 - Non-docker alternative: H2 in memory DB
