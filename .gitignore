@@ -7,6 +7,10 @@
 .lib/
 dist/
 target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
 
 # Log file
 *.log
@@ -17,7 +21,9 @@ hs_err_pid*
 
 ### IntelliJ IDEA ###
 .idea
+*.iws
 *.iml
+*.ipr
 
 # Mac
 .DS_Store
