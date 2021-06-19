@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    # jdbc database url
+    url: jdbc:postgresql://localhost:5432/postgres
+    # username for the db user
+    username: postgres
+    # password for the db user
+    password: ${DB_PASSWORD}
+  flyway:
+    locations: classpath:db/migration
+    schemas: public
+    enabled: true
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        # https://javabydeveloper.com/what-is-dialect-in-hibernate-and-list-of-dialects/
+        dialect: org.hibernate.dialect.PostgreSQL10Dialect
+
