@@ -1,3 +1,13 @@
-GET http://{{baseUrl}}/v1/booking
+GET http://{{baseUrl}}/v1/bookings
+
+###
+POST {{baseUrl}}/v1/bookings
+Content-Type: application/json
+
+{
+  "playerId": 3,
+  "court": 7,
+  "startTime": "2021-06-22T14:00:00Z"
+}
 
 ###
