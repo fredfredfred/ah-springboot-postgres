@@ -46,7 +46,22 @@ spring:
 
 ```
 ---
-# Spring Data
+# Java Persistence Entity
+```java
+@Entity
+public class Player {
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @NotNull
+  private Long id;
+
+  @NotNull
+  private String name;
+
+  @NotNull
+  private LocalDate birthday;
+}
+```
 
 ---
 # Integration Testing
@@ -55,6 +70,12 @@ spring:
 - [Testcontainers Postgres Module Reference Guide](https://www.testcontainers.org/modules/databases/postgres/)
 - Non-docker alternative: H2 in memory DB
 
+---
+
+## Test Containers
+```yaml
+
+```
 ---
 
 # JPQL
