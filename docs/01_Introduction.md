@@ -15,10 +15,10 @@ footer: 'Slides by [Ansgar Hugo](http://www.ansgar-hugo.de)'
 - SQL: Structured Query Language
   https://en.wikipedia.org/wiki/Relational_database
 ---
-# Popular Vendors
+# Popular Vendors - SQL Is 
 
 https://db-engines.com/en/ranking
-![width:600px](img/top_vendors.png "Popular DBMS")
+![h:400px](img/top_vendors.png "Popular DBMS")
 
 ---
 # Relations / Tables / Entities

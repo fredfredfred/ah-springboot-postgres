@@ -11,40 +11,38 @@ _paginate: false
 footer: 'Slides by [Ansgar Hugo](http://www.ansgar-hugo.de)'
 ---
 # SQL - Structured Query Language
-- ANSI Standard since SQL-86, but many dialects and proprietary per vendor
-- SQL-86, SQL-89, SQL-92,... SQL:2016
-- Don't panik, the Standard covers 99% of use cases
+- ANSI Standard since SQL-86
+- many dialects and proprietary per vendor
+- many versions: SQL-86, SQL-89, SQL-92,... SQL:2016
+- Don't panik, there is a common subset which covers 99%
 
-
+---
+# SQL - Structure
 - DDL: Data definition language (CREATE, DROP, ALTER, TRUNCATE)
 - DQL: Data query language (SELECT)
 - DML: Data manipulation language (INSERT, UPDATE)
 - DCL: Data control language (GRANT, REVOKE)
 
 ---
-
----
 # DB Tool - Intellij Idea - Add datasource
-![width:600px](img/idea_01.png "Add datasource")
+![h:400px](img/idea_01.png "Add datasource")
 
 ---
 # DB Tool - Intellij Idea - Configure connection
-Download drive in Intellij if not yet downloaded. For other tools you can
-get the driver [here](https://jdbc.postgresql.org).
 
-![width:600px](img/idea_02.png "Configure jdbc connection")
+![h:400px](img/idea_02.png "Configure jdbc connection")
 
 ---
 # DB Tool - Intellij Idea - Test connection
-![width:600px](img/idea_03.png "Test connection")
+![h:400px](img/idea_03.png "Test connection")
 
 ---
 # DB Tool - Intellij Idea - Select schema
-![width:600px](img/idea_04.png "Select public schema")
+![h:400px](img/idea_04.png "Select public schema")
 
 ---
 # DB Tool - Intellij Idea - Open console
-![width:600px](img/idea_05.png "console")
+![h:400px](img/idea_05.png "console")
 
 ---
 # Create table
