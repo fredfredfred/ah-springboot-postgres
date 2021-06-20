@@ -62,6 +62,20 @@ public class Player {
   private LocalDate birthday;
 }
 ```
+---
+# Java Persistence Mapping
+```java
+@Entity
+public class Booking {
+  // ...
+
+  @ManyToOne
+  @JoinColumn(name = "player_id", nullable = false)
+  private Player player;
+
+  // ...
+}
+```
 
 ---
 # Integration Testing
@@ -74,8 +88,21 @@ public class Player {
 
 ## Test Containers
 ```yaml
+spring:
+  datasource:
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+    url: jdbc:tc:postgresql:13.3:///booking
+    username: ${EMBEDDED_DB_USERNAME}
+    password: ${EMBEDDED_DB_PASSWORD}
+```
 
+---
+## Transactions
+```java
+@Service
+@Transactional
+public class PlayerService {
+...
+}
 ```
 ---
-
-# JPQL
