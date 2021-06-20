@@ -1,4 +1,4 @@
-package com.fcoach.model;
+package com.fcoach.player;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

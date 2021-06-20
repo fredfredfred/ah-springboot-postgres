@@ -1,7 +1,7 @@
 package com.fcoach.repository;
 
-import com.fcoach.model.Player;
-import org.hibernate.validator.internal.engine.ConstraintViolationImpl;
+import com.fcoach.player.Player;
+import com.fcoach.player.PlayerRepository;
 import org.junit.BeforeClass;
 import org.junit.ClassRule;
 import org.junit.jupiter.api.Assertions;
@@ -11,7 +11,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 import org.testcontainers.containers.PostgreSQLContainer;
 
-import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
 import java.time.LocalDate;
 import java.time.Month;

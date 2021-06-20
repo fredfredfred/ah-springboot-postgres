@@ -1,0 +1,51 @@
+###
+GET {{baseUrl}}/v1/players
+
+###
+GET {{baseUrl}}/v1/players?page=0&size=3
+
+###
+GET {{baseUrl}}/v1/players?page=2&size=3
+
+###
+GET {{baseUrl}}/v1/players/1
+Accept:application/json
+
+###
+GET {{baseUrl}}/v1/players/111
+Accept:application/json
+
+###
+GET {{baseUrl}}/v1/players/adults
+
+
+###
+PUT {{baseUrl}}/v1/players/1
+Content-Type: application/json
+
+{
+  "name": "Maxi",
+  "birthday": "2008-03-20"
+}
+
+###
+PUT {{baseUrl}}/v1/players/1
+Content-Type: application/json
+
+  {
+    "name": "Max",
+    "birthday": "2006-04-11"
+  }
+
+###
+
+POST {{baseUrl}}/v1/players
+Content-Type: application/json
+
+  {
+    "name": "Gertrud",
+    "birthday": "1975-12-24"
+  }
+
+###
+
