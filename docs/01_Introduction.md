@@ -31,11 +31,11 @@ https://db-engines.com/en/ranking
 | View or result set | Derived relation         | All bookings for court 2 on friday                  |
 
 ---
-## Entity Relationsship Diagram
+## Entity Relationship Diagram
 ![h:400px](img/er_diagram.png "Entity Relationship Diagram")
 
 ---
-## Relationsship Concepts and Terms
+## Relationship Concepts and Terms
 - Primary key
 - Foreign key
 - Many to one: Children -> Mother

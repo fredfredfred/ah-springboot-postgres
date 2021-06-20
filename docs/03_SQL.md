@@ -17,7 +17,7 @@ footer: 'Slides by [Ansgar Hugo](http://www.ansgar-hugo.de)'
 - ANSI Standard since SQL-86
 - many dialects and proprietary per vendor
 - many versions: SQL-86, SQL-89, SQL-92,... SQL:2016
-- Don't panik, there is a common subset which covers 99%
+- Don't panic, there is a common subset which covers 99%
 
 ---
 ## SQL - Structure
