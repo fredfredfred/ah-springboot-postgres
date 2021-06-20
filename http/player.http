@@ -1,4 +1,3 @@
-###
 GET {{baseUrl}}/v1/players
 
 ###

@@ -1,0 +1,3 @@
+GET http://{{baseUrl}}/v1/booking
+
+###
