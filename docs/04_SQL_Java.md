@@ -95,3 +95,14 @@ spring:
     username: ${EMBEDDED_DB_USERNAME}
     password: ${EMBEDDED_DB_PASSWORD}
 ```
+
+---
+## Transactions
+```java
+@Service
+@Transactional
+public class PlayerService {
+...
+}
+```
+---
