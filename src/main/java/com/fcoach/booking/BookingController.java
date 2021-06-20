@@ -10,11 +10,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.validation.Valid;
 import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/v1/booking")
+@RequestMapping("/v1/bookings")
 public class BookingController {
 
   private final BookingService bookingService;
@@ -42,7 +43,7 @@ public class BookingController {
 
   @PostMapping(value = "", produces = {"application/json"})
   @ResponseBody
-  public Booking create(@RequestBody BookingRequest bookingRequest) {
+  public Booking create(@RequestBody @Valid BookingRequest bookingRequest) {
     var optPlayer = playerService.findById(bookingRequest.getPlayerId());
     var player = optPlayer.orElseThrow(PlayerNotFoundException::new);
     return bookingService.createOneHourBooking(player, bookingRequest.getCourt(), bookingRequest.getStartTime());

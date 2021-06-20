@@ -18,3 +18,9 @@ spring:
       hibernate:
         # https://javabydeveloper.com/what-is-dialect-in-hibernate-and-list-of-dialects/
         dialect: org.hibernate.dialect.PostgreSQL10Dialect
+server:
+  error:
+    include-exception: true
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: never
