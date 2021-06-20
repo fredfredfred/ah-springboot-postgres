@@ -10,6 +10,20 @@ paginate: true
 _paginate: false
 footer: 'Slides by [Ansgar Hugo](http://www.ansgar-hugo.de)'
 ---
+## Create spring boot project
+For example using the spring-boot command line tool.
+```bash
+# install the spring-cli
+brew tap spring-io/tap
+brew install spring-boot
+
+# initialize spring project
+
+spring init --dependencies=web,data-jpa,flyway,postgresql,testcontainers,lombok,restdocs,validation \
+--java-version 11 --package-name com.fcoach --name api springboot-postgres
+# use 'spring init --list' to discover dependencies
+```
+---
 # Spring Data, JPA
 - [Spring Data JPA](https://docs.spring.io/spring-boot/docs/2.5.1/reference/htmlsingle/#boot-features-jpa-and-spring-data)
 - [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)

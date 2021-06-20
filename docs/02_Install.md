@@ -30,13 +30,16 @@ psql -l
 ---
 ## Create DB
 ```bash
-# create user
-createuser -s db_user
-# optional for local testing: Set a password
-psql booking db_user
-  \password change_secret
-  \q
+# create database
+createdb test
+# delete database
+dropdb test
+# create database for spring boot project
+createdb booking
+
 ```
+
+---
 ## Setup user
 ```bash
 # create user
@@ -52,4 +55,18 @@ vi /opt/homebrew/var/postgres/pg_hba.conf
 # to
 # host    all             all             127.0.0.1/32            password
 brew services restart postgresql
+psql -l
+psql -d booking
+```
+---
+# Docker alternative
+```shell
+# pull postgres and run it
+docker pull postgres
+docker run --name db1 -d postgres
+
+# run commands inside the container
+docker exec -it db1 bash
+su - postgres -c psql
+# Now you can run psql commands. Use \q to exit
 ```

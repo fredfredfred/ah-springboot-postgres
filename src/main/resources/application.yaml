@@ -1,9 +1,9 @@
 spring:
   datasource:
     # jdbc database url
-    url: jdbc:postgresql://localhost:5432/postgres
+    url: jdbc:postgresql://localhost:5432/booking
     # username for the db user
-    username: postgres
+    username: ${DB_USERNAME}
     # password for the db user
     password: ${DB_PASSWORD}
   flyway:
