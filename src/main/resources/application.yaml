@@ -18,4 +18,3 @@ spring:
       hibernate:
         # https://javabydeveloper.com/what-is-dialect-in-hibernate-and-list-of-dialects/
         dialect: org.hibernate.dialect.PostgreSQL10Dialect
-
