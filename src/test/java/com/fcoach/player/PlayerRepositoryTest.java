@@ -1,7 +1,5 @@
 package com.fcoach.player;
 
-import com.fcoach.player.Player;
-import com.fcoach.player.PlayerRepository;
 import org.junit.BeforeClass;
 import org.junit.ClassRule;
 import org.junit.jupiter.api.Assertions;
