@@ -1,4 +1,4 @@
-package com.fcoach.repository;
+package com.fcoach.player;
 
 import com.fcoach.player.Player;
 import com.fcoach.player.PlayerRepository;
