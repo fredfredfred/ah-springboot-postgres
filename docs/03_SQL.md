@@ -44,6 +44,10 @@ footer: 'Slides by [Ansgar Hugo](http://www.ansgar-hugo.de)'
 ![h:400px](img/idea_04.png "Select public schema")
 
 ---
+## DB Tool - Intellij Idea - Timezone
+![h:400px](img/idea_06_timezone.pngg "timezone")
+
+---
 ## DB Tool - Intellij Idea - Open console
 ![h:400px](img/idea_05.png "console")
 
