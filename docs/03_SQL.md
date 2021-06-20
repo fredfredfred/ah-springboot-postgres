@@ -6,46 +6,49 @@ description: Short introduction for novice developers to use SQL in Java
 theme: gaia
 class:
   - invert
+
 paginate: true
 _paginate: false
 footer: 'Slides by [Ansgar Hugo](http://www.ansgar-hugo.de)'
+
+
 ---
-# SQL - Structured Query Language
+## SQL - Structured Query Language
 - ANSI Standard since SQL-86
 - many dialects and proprietary per vendor
 - many versions: SQL-86, SQL-89, SQL-92,... SQL:2016
 - Don't panik, there is a common subset which covers 99%
 
 ---
-# SQL - Structure
+## SQL - Structure
 - DDL: Data definition language (CREATE, DROP, ALTER, TRUNCATE)
 - DQL: Data query language (SELECT)
 - DML: Data manipulation language (INSERT, UPDATE)
 - DCL: Data control language (GRANT, REVOKE)
 
 ---
-# DB Tool - Intellij Idea - Add datasource
+## DB Tool - Intellij Idea - Add datasource
 ![h:400px](img/idea_01.png "Add datasource")
 
 ---
-# DB Tool - Intellij Idea - Configure connection
+## DB Tool - Intellij Idea - Configure connection
 
 ![h:400px](img/idea_02.png "Configure jdbc connection")
 
 ---
-# DB Tool - Intellij Idea - Test connection
+## DB Tool - Intellij Idea - Test connection
 ![h:400px](img/idea_03.png "Test connection")
 
 ---
-# DB Tool - Intellij Idea - Select schema
+## DB Tool - Intellij Idea - Select schema
 ![h:400px](img/idea_04.png "Select public schema")
 
 ---
-# DB Tool - Intellij Idea - Open console
+## DB Tool - Intellij Idea - Open console
 ![h:400px](img/idea_05.png "console")
 
 ---
-# Create table
+## Create table
 ```sql
 CREATE TABLE player
 (
@@ -56,7 +59,7 @@ CREATE TABLE player
 ```
 
 ---
-# Create table with reference
+## Create table with reference
 ```sql
 CREATE TABLE booking
 (
@@ -69,23 +72,11 @@ CREATE TABLE booking
 ```
 
 ---
-# Constraints - Some examples
-```sql
--- Alternative way of adding constraints later:
-ALTER TABLE booking ADD FOREIGN KEY ("player_id") REFERENCES player ("id");
-
--- prevent duplicates
-CREATE UNIQUE INDEX player_name_uidx ON player(name);
-
--- index used for search
-CREATE INDEX player_birthday_idx ON player(birthday);
-```
----
-# PostgreSQL data types
+## PostgreSQL data types
 [Postgres Data Types](https://www.postgresql.org/docs/current/datatype.html)
 
 ---
-# Insert new data
+## Insert new data
 
 ```sql
 INSERT INTO player (id, name, birthday)
@@ -96,7 +87,7 @@ VALUES ('Peter', '2005-05-01');
 ```
 
 ---
-# Bulk insert
+## Bulk insert
 ```sql
 INSERT INTO player (name, birthday)
 VALUES ('Leon', '1990-12-01'),
@@ -111,7 +102,7 @@ VALUES ('Leon', '1990-12-01'),
 ```
 
 ---
-# Query data
+## Query data
 ```sql
 -- select all players born after year 2000
 SELECT *
@@ -125,7 +116,7 @@ FROM player
 WHERE birthday < NOW() - INTERVAL '18 years';
 ```
 ---
-# More queries
+## More queries
 ```sql
 SELECT *
 FROM player
@@ -133,7 +124,7 @@ WHERE birthday < NOW() - INTERVAL '18 years'
 AND name ilike 'l%';
 ```
 ---
-# Update existing data
+## Update existing data
 ```sql
 UPDATE player
 SET birthday = '2005-02-15'
@@ -145,12 +136,27 @@ Exercise:
 - What's the result?
 
 ---
-# Delete existing data
+## Delete existing data
 ```sql
-UPDATE player
-SET birthday = '2005-02-15'
+-- good ides: first check what you delete
+SELECT *
+FROM player
+where name = 'Peter';
+
+-- delete players by name
+DELETE
+FROM player
 WHERE name = 'Peter';
 ```
-Exercise:
-- Add other Peter (yes, same name) with different birthday
+---
+## Constraints - Some examples
+```sql
+-- Alternative way of adding constraints later:
+ALTER TABLE booking ADD FOREIGN KEY ("player_id") REFERENCES player ("id");
 
+-- prevent duplicates
+CREATE UNIQUE INDEX player_name_uidx ON player(name);
+
+-- index used for search
+CREATE INDEX player_birthday_idx ON player(birthday);
+```

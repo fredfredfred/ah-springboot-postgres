@@ -1,0 +1,27 @@
+@startuml
+
+' hide the spot
+' hide circle
+
+' avoid problems with angled crows feet
+' skinparam linetype ortho
+
+entity Player {
+  *id : BIGINT <<PK>>
+  --
+  *name : text
+  *birthday : date
+}
+
+entity Booking {
+  *id : BIGINT <<PK>>
+  --
+  *court : INT
+  *player_id : BIGINT <<FK>>
+  *start_time : TIMESTAMP
+  *end_time : TIMESTAMP
+}
+
+Player ||--o{ Booking
+
+@enduml

@@ -10,18 +10,18 @@ paginate: true
 _paginate: false
 footer: 'Slides by [Ansgar Hugo](http://www.ansgar-hugo.de)'
 ---
-# Relational Databases
+## Relational Databases
 - RDBMS: Relational database management system
 - SQL: Structured Query Language
   https://en.wikipedia.org/wiki/Relational_database
 ---
-# Popular Vendors - SQL Is 
+## Popular Vendors - SQL Is Leading
 
 https://db-engines.com/en/ranking
 ![h:400px](img/top_vendors.png "Popular DBMS")
 
 ---
-# Relations / Tables / Entities
+## Relations / Tables / Entities
 
 | SQL term           | Relational term          | Example                                             |
 | :-------------     | :-------------           | :-----                                              |
@@ -32,7 +32,7 @@ https://db-engines.com/en/ranking
 
 ---
 ## Entity Relationsship Diagram
-https://tc-dorfen.de/anlage
+![h:400px](img/er_diagram.png "Entity Relationship Diagram")
 
 ---
 ## Relationsship Concepts and Terms
