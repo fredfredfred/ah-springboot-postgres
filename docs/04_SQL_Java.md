@@ -27,10 +27,6 @@ spring:
 export DB_USERNAME="db_user"
 export DB_PASSWORD="change_secret"
 ```
----
-# Spring Data, JPA - References
-- [Spring Data JPA](https://docs.spring.io/spring-boot/docs/2.5.1/reference/htmlsingle/#boot-features-jpa-and-spring-data)
-- [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
 
 ---
 # Flyway
@@ -105,4 +101,4 @@ public class PlayerService {
 ...
 }
 ```
----
+

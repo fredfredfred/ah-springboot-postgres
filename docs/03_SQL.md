@@ -45,7 +45,7 @@ footer: 'Slides by [Ansgar Hugo](http://www.ansgar-hugo.de)'
 
 ---
 ## DB Tool - Intellij Idea - Timezone
-![h:400px](img/idea_06_timezone.pngg "timezone")
+![h:400px](img/idea_06_timezone.png "timezone")
 
 ---
 ## DB Tool - Intellij Idea - Open console
@@ -127,6 +127,11 @@ FROM player
 WHERE birthday < NOW() - INTERVAL '18 years'
 AND name ilike 'l%';
 ```
+```sql
+SELECT court, p.name, b.start_time from booking b
+join player p on p.id = b.player_id
+where p.name ilike 'l%';
+```
 ---
 ## Update existing data
 ```sql
@@ -142,7 +147,7 @@ Exercise:
 ---
 ## Delete existing data
 ```sql
--- good ides: first check what you delete
+-- good idea: first check what you delete
 SELECT *
 FROM player
 where name = 'Peter';

@@ -24,6 +24,13 @@ spring init --dependencies=web,data-jpa,flyway,postgresql,testcontainers,lombok,
 # use 'spring init --list' to discover dependencies
 ```
 ---
+## Download Sample Project
+```bash
+cd myprojects
+git clone git@github.com:fredfredfred/ah-springboot-postgres.git
+```
+
+---
 ## Spring Data, JPA
 - [Spring Data JPA](https://docs.spring.io/spring-boot/docs/2.5.1/reference/htmlsingle/#boot-features-jpa-and-spring-data)
 - [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
@@ -44,7 +51,7 @@ public interface PlayerRepository
 
 ---
 ## JPQL
-SQL like query language with Java Objects support (dot notation).
+SQL like query language with Java objects support (dot notation).
 ```java
 @Query("select p from Player p where p.birthday >= :sinceDate")
 List<Player> findPlayersBornSince(@Param("sinceDate") LocalDate since);

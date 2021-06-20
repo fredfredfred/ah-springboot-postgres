@@ -55,8 +55,6 @@ vi /opt/homebrew/var/postgres/pg_hba.conf
 # to
 # host    all             all             127.0.0.1/32            password
 brew services restart postgresql
-psql -l
-psql -d booking
 ```
 ---
 # Docker alternative

@@ -31,11 +31,19 @@ https://db-engines.com/en/ranking
 | View or result set | Derived relation         | All bookings for court 2 on friday                  |
 
 ---
-## Entity Relationship Diagram
+## Table Player
+![h:400px](img/table_01.png)
+
+---
+## Table Booking With Relation To Player
+![h:400px](img/table_02.png)
+
+---
+## Entity Relationsship Diagram
 ![h:400px](img/er_diagram.png "Entity Relationship Diagram")
 
 ---
-## Relationship Concepts and Terms
+## Key Concepts and Terms
 - Primary key
 - Foreign key
 - Many to one: Children -> Mother
@@ -43,16 +51,14 @@ https://db-engines.com/en/ranking
 - One to many: Mother -> Children
 
 Question: What relationship has "parents - children"?
----
 
+---
 ## ACID
 
 ACID is a feature of database transactions intended to guarantee data validity.
-
 - Atomicity: Transaction is a single unit
 - Consistency: Data wont get corrupt by your transaction
 - Isolation: Concurrent transactions do not influence each other
-  - here it gets more complicated as conflicts are possible and strategies exist (concurrency control mechanisms) to
-    mitigate them
+  - Conflicts are possible and strategies exist (concurrency control mechanisms) to avoid them
 - Durability: Survive power outage
 
