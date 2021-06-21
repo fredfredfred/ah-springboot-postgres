@@ -8,7 +8,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import java.time.OffsetDateTime;
 
@@ -23,11 +22,9 @@ public class Booking {
   private int court;
 
   @ManyToOne
-  @JoinColumn(name = "player_id", nullable = false)
   private Player player;
 
   private OffsetDateTime startTime;
-
   private OffsetDateTime endTime;
 
 }
