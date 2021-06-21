@@ -2,8 +2,6 @@ spring:
   datasource:
     driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
     url: jdbc:tc:postgresql:13.3:///booking
-    username: ${EMBEDDED_DB_USERNAME}
-    password: ${EMBEDDED_DB_PASSWORD}
   jpa:
     show-sql: true
     hibernate:
