@@ -9,8 +9,10 @@ class:
 paginate: true
 _paginate: false
 footer: 'Slides by [Ansgar Hugo](http://www.ansgar-hugo.de)'
+
+
 ---
-## Create spring boot project
+## Create Spring Boot Project
 For example using the spring-boot command line tool.
 ```bash
 # install the spring-cli
@@ -23,6 +25,7 @@ spring init --dependencies=web,data-jpa,flyway,postgresql,testcontainers,lombok,
 --java-version 11 --package-name com.fcoach --name api springboot-postgres
 # use 'spring init --list' to discover dependencies
 ```
+
 ---
 ## Spring Data, JPA
 - [Spring Data JPA](https://docs.spring.io/spring-boot/docs/2.5.1/reference/htmlsingle/#boot-features-jpa-and-spring-data)
@@ -44,7 +47,7 @@ public interface PlayerRepository
 
 ---
 ## JPQL
-SQL like query language with Java Objects support (dot notation).
+SQL like query language with Java objects support (dot notation).
 ```java
 @Query("select p from Player p where p.birthday >= :sinceDate")
 List<Player> findPlayersBornSince(@Param("sinceDate") LocalDate since);
