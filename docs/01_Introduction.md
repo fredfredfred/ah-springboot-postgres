@@ -9,6 +9,24 @@ class:
 paginate: true
 _paginate: false
 footer: 'Slides by [Ansgar Hugo](http://www.ansgar-hugo.de)'
+
+
+---
+## Introduction To SQL Databases With Java
+2021-06-22
+
+- Relational Databases
+- Postgres Installation
+- SQL
+- Java and SQL
+- Spring Data
+
+---
+## About Me
+- Ansgar Hugo
+- Solution Architect and Fullstack Developer since 20 years
+- contact@ansgarhugo.de
+
 ---
 ## Relational Databases
 - RDBMS: Relational database management system
@@ -43,6 +61,7 @@ https://db-engines.com/en/ranking
 - One to many: Mother -> Children
 
 Question: What relationship has "parents - children"?
+
 ---
 
 ## ACID
@@ -55,4 +74,9 @@ ACID is a feature of database transactions intended to guarantee data validity.
   - here it gets more complicated as conflicts are possible and strategies exist (concurrency control mechanisms) to
     mitigate them
 - Durability: Survive power outage
+
+---
+## Sample Project
+Book Tennis courts
+![h:450px](img/courts.jpg "Tennis Courts") 
 
