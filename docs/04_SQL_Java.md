@@ -9,8 +9,10 @@ class:
 paginate: true
 _paginate: false
 footer: 'Slides by [Ansgar Hugo](http://www.ansgar-hugo.de)'
+
+
 ---
-# Spring Data, JPA - Configuration
+## Spring Data, JPA - Configuration
 ```yaml
 spring:
   datasource:
@@ -22,18 +24,14 @@ spring:
     password: ${DB_PASSWORD}
 ```
 ---
-# Pass environment variables
+## Pass environment variables
 ```bash
 export DB_USERNAME="db_user"
 export DB_PASSWORD="change_secret"
 ```
----
-# Spring Data, JPA - References
-- [Spring Data JPA](https://docs.spring.io/spring-boot/docs/2.5.1/reference/htmlsingle/#boot-features-jpa-and-spring-data)
-- [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
 
 ---
-# Flyway
+## Flyway
 - [Flyway Migration](https://docs.spring.io/spring-boot/docs/2.5.1/reference/htmlsingle/#howto-execute-flyway-database-migrations-on-startup)
 - SQL is executed automatically on application start
 - helps to keep the schema in sync with the code
@@ -46,7 +44,19 @@ spring:
 
 ```
 ---
-# Java Persistence Entity
+## Flyway On Spring Boot Startup
+Run via command line
+```bash
+# Needs these set:
+# export DB_USERNAME="db_user"
+# export DB_PASSWORD="change_secret"
+mvn spring-boot:run
+```
+
+or run from Intellij
+
+---
+## Java Persistence Entity
 ```java
 @Entity
 public class Player {
@@ -63,7 +73,7 @@ public class Player {
 }
 ```
 ---
-# Java Persistence Mapping
+## Java Persistence Mapping
 ```java
 @Entity
 public class Booking {
@@ -78,7 +88,7 @@ public class Booking {
 ```
 
 ---
-# Integration Testing
+## Integration Testing
 
 - [Testcontainers](https://www.testcontainers.org/)
 - [Testcontainers Postgres Module Reference Guide](https://www.testcontainers.org/modules/databases/postgres/)
@@ -105,4 +115,4 @@ public class PlayerService {
 ...
 }
 ```
----
+
