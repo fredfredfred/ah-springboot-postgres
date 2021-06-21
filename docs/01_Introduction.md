@@ -39,13 +39,17 @@ https://db-engines.com/en/ranking
 ![h:400px](img/top_vendors.png "Popular DBMS")
 
 ---
+## Sample Project - Tennis Court Booking
+![h:450px](img/courts.jpg "Tennis Courts") player <peter> books court <1> on <Fri 14:00>
+
+---
 ## Relations / Tables / Entities
 
 | SQL term           | Relational term          | Example                                             |
 | :-------------     | :-------------           | :-----                                              |
-| Table              | Relation or Base relvar  | Player, Court, Booking                              |
+| Table              | Relation or Base relvar  | Player, Booking                                     |
 | Row                | Tuple or record          | Booking "Fred, Friday, 14:00, Court 1               |
-| Column             | Attribute or field       | Player.id, Player.first_name, Player.last_name      |
+| Column             | Attribute or field       | Player: id, name, birthday                          |
 | View or result set | Derived relation         | All bookings for court 2 on friday                  |
 
 ---
@@ -74,9 +78,4 @@ ACID is a feature of database transactions intended to guarantee data validity.
   - here it gets more complicated as conflicts are possible and strategies exist (concurrency control mechanisms) to
     mitigate them
 - Durability: Survive power outage
-
----
-## Sample Project
-Book Tennis courts
-![h:450px](img/courts.jpg "Tennis Courts") 
 
