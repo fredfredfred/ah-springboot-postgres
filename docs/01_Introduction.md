@@ -40,7 +40,7 @@ https://db-engines.com/en/ranking
 
 ---
 ## Sample Project - Tennis Court Booking
-![h:450px](img/courts.jpg "Tennis Courts") player <peter> books court <1> on <Fri 14:00>
+![h:450px](img/courts.jpg "Tennis Courts") player <Peter> books court <1> on <Fri 14:00>
 
 ---
 ## Relations / Tables / Entities
@@ -64,7 +64,9 @@ https://db-engines.com/en/ranking
 - Many to many: Student <-> Teacher
 - One to many: Mother -> Children
 
-Question: What relationship has "parents - children"?
+Question: What relationship have: 
+`Parents - children?`
+`Bank - customer`
 
 ---
 
