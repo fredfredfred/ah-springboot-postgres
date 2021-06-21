@@ -9,6 +9,8 @@ class:
 paginate: true
 _paginate: false
 footer: 'Slides by [Ansgar Hugo](http://www.ansgar-hugo.de)'
+
+
 ---
 ## Install Postgres
 ```bash
@@ -51,13 +53,13 @@ psql booking db_user
 # enable security for local postgres
 vi /opt/homebrew/var/postgres/pg_hba.conf
 # e.g. change 'trust' to 'password' or 'peer' (os user)
-# host    all             all             127.0.0.1/32            trust
+# host    all       all       127.0.0.1/32      trust
 # to
-# host    all             all             127.0.0.1/32            password
+# host    all       all       127.0.0.1/32      password
 brew services restart postgresql
 ```
 ---
-# Docker alternative
+## Docker alternative
 ```shell
 # pull postgres and run it
 docker pull postgres
@@ -68,3 +70,11 @@ docker exec -it db1 bash
 su - postgres -c psql
 # Now you can run psql commands. Use \q to exit
 ```
+
+---
+## Download Sample Project
+```bash
+cd myprojects
+git clone git@github.com:fredfredfred/ah-springboot-postgres.git
+```
+

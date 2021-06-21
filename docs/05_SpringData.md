@@ -9,8 +9,10 @@ class:
 paginate: true
 _paginate: false
 footer: 'Slides by [Ansgar Hugo](http://www.ansgar-hugo.de)'
+
+
 ---
-## Create spring boot project
+## Create Spring Boot Project
 For example using the spring-boot command line tool.
 ```bash
 # install the spring-cli
@@ -22,12 +24,6 @@ brew install spring-boot
 spring init --dependencies=web,data-jpa,flyway,postgresql,testcontainers,lombok,restdocs,validation \
 --java-version 11 --package-name com.fcoach --name api springboot-postgres
 # use 'spring init --list' to discover dependencies
-```
----
-## Download Sample Project
-```bash
-cd myprojects
-git clone git@github.com:fredfredfred/ah-springboot-postgres.git
 ```
 
 ---

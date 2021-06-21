@@ -9,6 +9,24 @@ class:
 paginate: true
 _paginate: false
 footer: 'Slides by [Ansgar Hugo](http://www.ansgar-hugo.de)'
+
+
+---
+## Introduction To SQL Databases With Java
+2021-06-22
+
+- Relational Databases
+- Postgres Installation
+- SQL
+- Java and SQL
+- Spring Data
+
+---
+## About Me
+- Ansgar Hugo
+- Solution Architect and Fullstack Developer since 20 years
+- contact@ansgarhugo.de
+
 ---
 ## Relational Databases
 - RDBMS: Relational database management system
@@ -31,19 +49,11 @@ https://db-engines.com/en/ranking
 | View or result set | Derived relation         | All bookings for court 2 on friday                  |
 
 ---
-## Table Player
-![h:400px](img/table_01.png)
-
----
-## Table Booking With Relation To Player
-![h:400px](img/table_02.png)
-
----
-## Entity Relationsship Diagram
+## Entity Relationship Diagram
 ![h:400px](img/er_diagram.png "Entity Relationship Diagram")
 
 ---
-## Key Concepts and Terms
+## Relationship Concepts and Terms
 - Primary key
 - Foreign key
 - Many to one: Children -> Mother
@@ -53,12 +63,20 @@ https://db-engines.com/en/ranking
 Question: What relationship has "parents - children"?
 
 ---
+
 ## ACID
 
 ACID is a feature of database transactions intended to guarantee data validity.
+
 - Atomicity: Transaction is a single unit
 - Consistency: Data wont get corrupt by your transaction
 - Isolation: Concurrent transactions do not influence each other
-  - Conflicts are possible and strategies exist (concurrency control mechanisms) to avoid them
+  - here it gets more complicated as conflicts are possible and strategies exist (concurrency control mechanisms) to
+    mitigate them
 - Durability: Survive power outage
+
+---
+## Sample Project
+Book Tennis courts
+![h:450px](img/courts.jpg "Tennis Courts") 
 
