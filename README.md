@@ -11,8 +11,10 @@ Audience: Developer novice with some basic experience using Java, Intellij, Home
 - Docker
 - Intellij
 
-[Introduction](docs/01_Introduction.md)
-[Installation](docs/02_Install.md)
-[SQL](docs/03_SQL.md)
-[SQL in Java](docs/04_SQL_Java.md)
-[Spring Data](docs/05_SpringData.md)
+---
+# Agenda
+- [Introduction](docs/01_Introduction.md)
+- [Installation](docs/02_Install.md)
+- [SQL](docs/03_SQL.md)
+- [SQL in Java](docs/04_SQL_Java.md)
+- [Spring Data](docs/05_SpringData.md)
