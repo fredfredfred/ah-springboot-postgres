@@ -38,11 +38,11 @@ public class PlayerController {
     return playerService.findAllAdults(pageable);
   }
 
-  @GetMapping(value = "/age", produces = {"application/json"})
+  @GetMapping(value = "/maxage", produces = {"application/json"})
   @ResponseBody
-  public List<Player> findAge(@RequestParam Integer ageParam) {
+  public List<Player> findMaxAge(@RequestParam("age") Integer ageParam) {
     int age = ageParam == null ? 18 : ageParam;
-    return playerService.findMinAge(age);
+    return playerService.findMaxAge(age);
   }
 
 

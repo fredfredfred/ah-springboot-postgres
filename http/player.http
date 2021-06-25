@@ -17,6 +17,9 @@ Accept:application/json
 ###
 GET {{baseUrl}}/v1/players/adults
 
+###
+GET {{baseUrl}}/v1/players/maxage?age=33
+
 
 ###
 PUT {{baseUrl}}/v1/players/1

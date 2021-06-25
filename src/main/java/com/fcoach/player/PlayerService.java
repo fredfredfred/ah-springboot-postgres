@@ -19,10 +19,6 @@ public class PlayerService {
     this.playerRepository = playerRepository;
   }
 
-  public List<Player> findAll() {
-    return playerRepository.findAll();
-  }
-
   public Page<Player> findAllPaged(Pageable pageable) {
     return playerRepository.findAll(pageable);
   }
@@ -32,7 +28,7 @@ public class PlayerService {
     return playerRepository.findPlayerByBirthdayLessThanEqual(since, pageable);
   }
 
-  public List<Player> findMinAge(int age) {
+  public List<Player> findMaxAge(int age) {
     var since = LocalDate.now().minusYears(age);
     return playerRepository.findPlayersBornSince(since);
   }
